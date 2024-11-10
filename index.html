@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-8">Company Management System</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Admin Login Box -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Admin Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="admin-id" class="block text-gray-700">Admin ID</label>
+                        <input type="text" id="admin-id" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <div class="mb-4">
+                        <label for="admin-password" class="block text-gray-700">Password</label>
+                        <input type="password" id="admin-password" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+                </form>
+            </div>
+            <!-- Sales Manager Login Box -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Sales Manager Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="sales-manager-id" class="block text-gray-700">Sales Manager ID</label>
+                        <input type="text" id="sales-manager-id" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <div class="mb-4">
+                        <label for="sales-manager-password" class="block text-gray-700">Password</label>
+                        <input type="password" id="sales-manager-password" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+                </form>
+            </div>
+            <!-- Labour Login Box -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Labour Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="labour-id" class="block text-gray-700">Labour ID</label>
+                        <input type="text" id="labour-id" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <div class="mb-4">
+                        <label for="labour-password" class="block text-gray-700">Password</label>
+                        <input type="password" id="labour-password" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+                </form>
+            </div>
+            <!-- HR Department Login Box -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">HR Department Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="hr-id" class="block text-gray-700">HR ID</label>
+                        <input type="text" id="hr-id" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <div class="mb-4">
+                        <label for="hr-password" class="block text-gray-700">Password</label>
+                        <input type="password" id="hr-password" class="w-full p-2 border border-gray-300 rounded mt-1">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="container mx-auto p-4 mt-8">
+        <h2 class="text-2xl font-bold mb-4">Admin Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Manage Sales Managers</h3>
+                <p>CRUD operations for Sales Managers.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Manage Labours</h3>
+                <p>CRUD operations for Labours.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">View Locations</h3>
+                <p>View locations of Sales Managers and Labours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales Manager Dashboard -->
+    <div class="container mx-auto p-4 mt-8">
+        <h2 class="text-2xl font-bold mb-4">Sales Manager Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Manage Labours</h3>
+                <p>CRUD operations for Labours within their area.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Add New Labours</h3>
+                <p>Add new Labours to the system.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Track In-time and Out-time</h3>
+                <p>Track in-time and out-time of Labours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HR Dashboard -->
+    <div class="container mx-auto p-4 mt-8">
+        <h2 class="text-2xl font-bold mb-4">HR Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Calculate Attendance</h3>
+                <p>Manage attendance records for all employees.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Calculate Salaries</h3>
+                <p>Calculate salaries for all employees.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Labour Task Management</h3>
+                <p>Manage daily tasks for Labours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Labour Dashboard -->
+    <div class="container mx-auto p-4 mt-8">
+        <h2 class="text-2xl font-bold mb-4">Labour Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Task Management</h3>
+                <p>Perform daily tasks assigned by Sales Managers.</p>
+            </div>
+        </div>
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
